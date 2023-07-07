@@ -1,0 +1,10 @@
+<%- include('../partials/header.ejs') %>
+
+<form action="/notifications/<%= noti._id %>?_method=patch" method="post">
+    <input type="text" name="title" id="" value="<%= noti.title %>">
+    <input type="text" name="body" id="" value="<%= noti.body %>">
+    <input type="text" name="author" id="" value="<%= noti.author %>">
+    <input type="submit" value="update">
+</form>
+
+<%- include('../partials/footer.ejs') %>

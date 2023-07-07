@@ -1,0 +1,15 @@
+<%- include('../partials/header.ejs') %>
+
+<form action="/jobs" method="post">
+    <input  required type="text" name="postName" id="" placeholder="Post Name">
+    <input  required type="text" name="companyName" id="" placeholder="company Name">
+    <input  required type="number" name="ctc" id="" placeholder="ctc">
+    <input  required type="text" name="location" id="" placeholder="location">
+    <input  required type="number" name="cgpa" id="" placeholder="cgpa">
+    <textarea  required name="description" id="" cols="30" rows="10" placeholder="description"></textarea>
+    <input  required type="number" name="noOfOpenings" id="" placeholder="No of Openings">
+    <input required  type="submit" value="Add a job">
+</form>
+
+<%- include('../partials/footer.ejs') %>
+

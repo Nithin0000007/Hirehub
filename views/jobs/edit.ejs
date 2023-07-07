@@ -1,0 +1,15 @@
+<%- include('../partials/header.ejs') %>
+
+<form action="/jobs/<%= job._id %>?_method=patch" method="post">
+    <input type="text" name="postName" id="" value= "<%= job.postName %>">
+    <input type="text" name="companyName" id="" value='<%= job.companyName %>'>
+    <input type="number" name="ctc" id="" value=<%= job.ctc %>>
+    <input type="text" name="location" id="" value=<%= job.location %>>
+    <input type="number" name="cgpa" id="" value=<%= job.cgpa %>>
+    <textarea name="description" id="" cols="30" rows="10"><%= job.description %></textarea>
+    <input type="number" name="noOfOpenings" id="" value=<%= job.noOfOpenings %>>
+    <input type="submit" value="update">
+</form>
+
+<%- include('../partials/footer.ejs') %>
+

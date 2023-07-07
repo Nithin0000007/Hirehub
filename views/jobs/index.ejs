@@ -1,0 +1,27 @@
+<%- include('../partials/header.ejs') %>
+
+<h1>All the Jobs</h1>
+<% for (let job of jobs.docs) { %>
+    <div><%= job.companyName %> - <a href="/jobs/<%= job._id %>">More</a></div>
+<%  } %>
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="/jobs?page=<%= jobs.prevPage %>" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="/jobs?page=<%= jobs.prevPage-1 %>"><%= jobs.page %></a></li>
+      <li class="page-item"><a class="page-link" href="/jobs?page=<%= jobs.page+1 %>"><%= jobs.page+1 %></a></li>
+      <li class="page-item"><a class="page-link" href="/jobs?page=<%= jobs.page+2 %>"><%= jobs.page+2 %></a></li>
+      <li class="page-item">
+        <a class="page-link" href="/jobs?page=<%= jobs.nextPage %>" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+<%- include('../partials/footer.ejs') %>
+
