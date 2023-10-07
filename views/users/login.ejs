@@ -1,5 +1,9 @@
 <%- include('../partials/header.ejs') %>
 
-
+<form action="/login" method="post">
+    <input type="email" name="username" id="" placeholder="email address">
+    <input type="password" name="password" id="" placeholder="password">
+    <input type="submit" value=Log in">  
+</form>
 
 <%- include('../partials/footer.ejs') %>

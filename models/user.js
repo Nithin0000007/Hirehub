@@ -2,14 +2,14 @@ const mongoose = require('mongoose');
 const passportLocalMongoose = require('passport-local-mongoose');
 
 const userSchema = new mongoose.Schema({
-    email:{
+    username:{
         type:String,
         unique:true,
-        required:true
+        // required:true
     },
     password:{
         type:String,
-        required:true
+        // required:true
     },
     phoneNo:Number,
     gender:String,
@@ -19,8 +19,6 @@ const userSchema = new mongoose.Schema({
     },
     cgpa:{
         type:Number,
-        min:0,
-        max:10
     }
 })
 

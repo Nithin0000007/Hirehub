@@ -64,12 +64,13 @@ app.get('/',(req,res)=>{
 const jobRouter = require('./routes/jobs');
 const notiRouter = require('./routes/notifications');
 const authRouter = require('./routes/auth');
-
+const userRouter = require('./routes/users');
 
 
 app.use(notiRouter);
 app.use(jobRouter);
 app.use(authRouter);
+app.use(userRouter);
 
 app.listen(3000,()=>{
     console.log("Server is running ...");

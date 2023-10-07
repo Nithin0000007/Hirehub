@@ -1,0 +1,11 @@
+<%- include('../partials/header.ejs') %>
+
+<form action="/user/<%= id %>?_method=patch" method="post">
+        <input type="email" name="username" id="" value="<%= foundUser.username %>" disabled>
+        <input type="number" name="phoneNo" id="" value="<%= foundUser.phoneNo %>">
+        <input type="text" name="gender" id="" value="<%= foundUser.gender %>">
+        <input type="number" name="cgpa" id="" value="<%= foundUser.cgpa %>">
+        <input type="submit" value="update">
+    </form>
+
+    <%- include('../partials/footer.ejs') %>
