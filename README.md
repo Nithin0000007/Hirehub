@@ -112,9 +112,9 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-- **Siddhant** - _Frontend_ - [Siddhant](https://github.com/i-see-pixels)
-- **Himanshu** - _Backend_ - [Himanshu](https://github.com/shunmahi2000)
-- **Hitesh** - _Backend_ - [Hitesh](https://github.com/spyder7370)
+- **Siddhant** - _Frontend_ 
+- **Himanshu** - _Backend_ 
+- **Hitesh** - _Backend_ 
 
 See also the list of [contributors](https://github.com/i-see-pixels/hirehub-backend/contributors) who participated in this project.
 
